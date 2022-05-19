@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+html{
+    --black: #333333;
+    --white: #ffffff;
+    --color1: #705CF2;
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    background: var(--white);
+    box-sizing: border-box;
+}
+
+body, input, button, textarea{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.4rem;
+}
+
+h2{
+    font: 700 3.6rem 'Poppins', sans-serif;
+}
+
+button, a, .button{
+    cursor: pointer;
+}
+
+#header{
+    height: 11.6rem;
+    background: var(--color1);
+    font: 700 2.4rem 'Poppins', sans-serif;
+    padding-left: 6.4rem;
+    border-radius: 0 0 0 3.6rem;
+    display: flex;
+    align-items: center;
+}
+
+#header a{
+    color: var(--white);
+}
+
+#main{
+    height: 70.4rem;
+}
+
+main #footer{
+    position: fixed;
+    bottom: 0;
+    height: 7.6rem;
+    width: 100vw;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+main #footer .buttons a{
+    display: flex;
+    align-items: center;
+    margin: 0 6.4rem 4rem 6.4rem;
+
+
+    font: 700 2.4rem 'Poppins', sans-serif;
+    color: var(--black);
+}
+
+main #footer .buttons a:nth-child(1) img{
+    margin-right: 1.6rem;
+}

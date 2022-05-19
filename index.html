@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisevi - Login</title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/md5.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <section id="login" class="grid">
+        <section id="header">
+            <p><a href="#">Escola Vivian Marçal</a></p>
+        </section>
+        <section id="welcome">
+            <div class="container">
+                <h1>BEM VINDO AO</h1>
+                <h2>SISEVI</h2>
+            </div>
+        </section>
+        <section id="login-area">
+            <form action="" onsubmit="validateForm(event);">
+                <input class="user-input" type="text" id="username" placeholder="Usuário"><br>
+                <input type="password" class="passwors-input" id="user-pass" placeholder="Senha">
+                <div class="buttons">
+                    <a href="#" class="forget">Esqueci minha senha</a>
+                    <button>LOGIN</button>
+                </div>
+            </form>
+            <div class="content">
+                <img src="images/login-text.svg" alt="">
+            </div>
+        </section>
+    </section>
+</body>
+</html>

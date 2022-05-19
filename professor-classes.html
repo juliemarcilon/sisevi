@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisevi - Turmas</title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+</head>
+<body>
+    <header id="header">
+        <h2><a href="professor-home.html">Escola Vivian Marçal</a></h2>
+    </header>
+    <main id="main">
+        <h2 class="title">Selecione a turma que deseja registrar as presenças</h2>
+        <p class="subtitle">Clique na turma que deseja abrir</p>
+
+        <section class="classes">
+            <a href="" class="class checked">
+                <h3>5º ano</h3>
+                <p>Manhã</p>
+            </a>
+            <a href="" class="class">
+                <h3>6º ano</h3>
+                <p>Manhã</p>
+            </a>
+            <a href="" class="class">
+                <h3>6º ano</h3>
+                <p>Tarde</p>
+            </a>
+        </section>
+        <footer id="footer">
+            <section class="buttons">
+                <a href="professor-shift.html" class="back-button">
+                    <img src="images/icon-back.svg" alt="">
+                    Voltar
+                </a>
+                <a href="professor-final.html" class="next-button">
+                    Finalizar
+                    <img src="images/icon-next.svg" alt="">
+                </a>
+            </section>
+        </footer>
+    </main>
+
+    <!-- TURMA -->
+    <section class="class-wrapper">
+        <div class="class-slide">
+            <header>
+                <h2>6º ano - manhã</h2>
+            </header>
+            <main>
+                <div class="students">
+                    <div class="student present">
+                        <h2>Arthur Silva</h2>
+                        <button class="button-absent">
+                            Presente
+                            <img src="images/icon-check.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="student present">
+                        <h2>Breno Moreira</h2>
+                        <button class="button-absent">
+                            Presente
+                            <img src="images/icon-check.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="student present">
+                        <h2>Camila Pereira</h2>
+                        <button class="button-absent">
+                            Presente
+                            <img src="images/icon-check.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="student absent">
+                        <h2>Arthur Silva</h2>
+                        <button class="button-present">
+                            Falta
+                            <img src="images/icon-x.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="student">
+                        <h2>Arthur Silva</h2>
+                        <button class="button-present">
+                            Falta
+                            <img src="images/icon-x.svg" alt="">
+                        </button>
+                        <button class="button-absent">
+                            Presente
+                            <img src="images/icon-check.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="student">
+                        <h2>Lorena Alves</h2>
+                        <button class="button-present">
+                            Falta
+                            <img src="images/icon-x.svg" alt="">
+                        </button>
+                        <button class="button-absent">
+                            Presente
+                            <img src="images/icon-check.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div class="buttons">
+                    <div class="button cancel">
+                        Cancelar
+                        <img src="images/icon-x.svg" alt="">
+                    </div>
+                    <button class="button concluded">
+                        Concluído
+                        <img src="images/icon-check.svg" alt="">
+                    </button>
+                </div>
+            </footer>
+        </div>
+    </section>
+</body>
+</html>

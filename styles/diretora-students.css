@@ -1,0 +1,219 @@
+main .students-wrapper header{
+    padding: 4.8rem 6.4rem 0 6.4rem;
+}
+
+main .students-wrapper header .content{
+    background: var(--color1);
+    border-radius: 1.6rem;
+    height: 5.4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: .6rem 3.6rem;
+}
+
+main .students-wrapper header .title{
+    font: 700 2.8rem 'Poppins', sans-serif;
+    color: var(--white);
+}
+
+main .students-wrapper header .buttons{
+    display: flex;
+    align-items: center;
+}
+
+main .students-wrapper header .buttons a{
+    height: 2.4rem;
+    margin-left: 2.4rem;
+}
+
+main .students-wrapper ul{
+    margin: 0 8.8rem 1.2rem;
+    padding: 2.4rem 3.6rem;
+    background: #F1EFFE;
+    height: 47.4rem;
+
+    border-radius: 0 0 1.6rem 1.6rem;
+}
+
+main .students-wrapper ul li{
+    border-bottom: solid #CBC4FB .1rem;
+    margin-bottom: .8rem;
+}
+
+main .students-wrapper ul li p{
+    margin-bottom: .8rem;
+    margin-left: .8rem;
+}
+
+main footer p{
+    margin: 1.2rem 12.4rem;
+    display: flex;
+    justify-content: flex-end;
+    color: #808080;
+    font-size: 1.4rem;
+}
+
+/* POP-UP NEW STUDENT */
+.new-student-wrapper{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    background: #000000cc;
+
+    /* visibility: hidden;
+    opacity: 0; */
+}
+
+.new-student-wrapper.open{
+    visibility: visible;
+    opacity: 1;
+}
+
+.new-student-wrapper .slide{
+    width: 108.8rem;
+    height: 60.2rem;
+    background: var(--white);
+    border-radius: 1.6rem;
+    padding: 3.6rem 5.2rem;
+    margin: auto;
+}
+
+.new-student-wrapper .slide main{
+    margin: 2.7rem 1.6rem;
+}
+
+.new-student-wrapper .slide main h3{
+    margin-left: 1.6rem;
+    margin-bottom: .4rem;
+    font: 600 2rem 'Poppins', sans-serif;
+}
+
+.new-student-wrapper .slide main input{
+    width: 100%;
+    margin-bottom: 2.4rem;
+    padding: .7rem 1.6rem;
+
+    background-color: #E6E6E6;
+    border-radius: .8rem;
+    font-size: 1.4rem;
+}
+
+.new-student-wrapper .slide main .restrictions{
+    display: flex;
+    height: 33rem;
+}
+
+.new-student-wrapper .slide main .restrictions div{
+    width: 46rem;
+}
+
+.new-student-wrapper .slide main .restrictions .divider{
+    border-left: solid #cccccc .1rem;
+    margin: 3rem 1.6rem;
+}
+
+.new-student-wrapper .slide main .buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.new-student-wrapper .slide main .button{
+    display: flex;
+    align-items: center;
+}
+
+.new-student-wrapper .slide main .button img{
+    margin-left: .8rem;
+}
+
+.new-student-wrapper .slide main .button:nth-child(1){
+    margin-right: 2.4rem;
+}
+
+/* POP-UP VIEW STUDENT */
+.view-student-wrapper{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    background: #000000cc;
+
+    /* visibility: hidden; */
+    /* opacity: 0; */
+}
+
+.view-student-wrapper.open{
+    visibility: visible;
+    opacity: 1;
+}
+
+.view-student-wrapper .slide{
+    width: 108.8rem;
+    height: 60.2rem;
+    background: var(--white);
+    border-radius: 1.6rem;
+    padding: 3.6rem 5.2rem;
+    margin: auto;
+}
+
+.view-student-wrapper .slide header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.view-student-wrapper .slide main{
+    margin: 2.7rem 1.6rem;
+}
+
+.view-student-wrapper .slide main h3{
+    margin-left: 1.6rem;
+    margin-bottom: .4rem;
+    font: 600 2rem 'Poppins', sans-serif;
+}
+
+.view-student-wrapper .slide main .restrictions{
+    display: flex;
+    height: 42rem;
+}
+
+.view-student-wrapper .slide main .restrictions div{
+    width: 46rem;
+}
+
+.view-student-wrapper .slide main .restrictions ul{
+    margin-left: 2.4rem;
+    margin-top: 2.4rem;
+}
+
+.view-student-wrapper .slide main .restrictions ul li{
+    font-size: 1.6rem;
+    margin-bottom: .8rem;
+}
+
+.view-student-wrapper .slide main .restrictions .divider{
+    border-left: solid #cccccc .1rem;
+    margin: 3rem 3.2rem;
+}
+
+.view-student-wrapper .slide main .buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.view-student-wrapper .slide main .button{
+    display: flex;
+    align-items: center;
+}
+
+.view-student-wrapper .slide main .button img{
+    margin-left: .8rem;
+    filter: brightness(0);
+}

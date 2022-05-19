@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisevi - Alunos</title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/diretora-students.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <script>
+        $( document ).ready(function() {
+            $('.view-student-wrapper').hide();
+            $('.new-student-wrapper').hide();
+        });
+
+        function slideDown(element) {
+            $(element).slideDown();
+        }
+
+        function slideUp(element) {
+            $(element).slideUp();
+        }
+    </script>
+    <header id="header">
+        <h3><a href="diretora-home.html">Escola Vivian Marçal</a></h3>
+    </header>
+    <main id="main">
+        <section class="students-wrapper">
+            <header>
+                <div class="content">
+                    <h2 class="title">Alunos</h2>
+                    <div class="buttons">
+                        <a href="#"><img src="images/icon-search.svg" alt=""></a>
+                        <a onclick="$('.new-student-wrapper').slideDown();"><img src="images/icon-plus.svg" alt=""></a>
+                    </div>
+                </div>
+            </header>
+            <ul class="students-list">
+                <li><p onclick="slideDown('.view-student-wrapper');">Arthur Silva</p></li>
+                <li><p>Breno Moreira</p></li>
+                <li><p>Camila Pereira</p></li>
+                <li><p>Daniel Castro</p></li>
+                <li><p>João Gomes</p></li>
+            </ul>
+            <footer>
+                <p>Clique no nome do aluno para ver mais informações</p>
+            </footer>
+        </section>
+        <footer id="footer">
+            <section class="buttons">
+                <a href="diretora-records.html" class="back-button">
+                    <img src="images/icon-back.svg" alt="">
+                    Voltar
+                </a>
+            </section>
+        </footer>
+    </main>
+
+    <!-- NEW STUDENT -->
+    <section class="new-student-wrapper">
+        <div class="slide">
+            <header>
+                <h2>Novo aluno</h2>
+            </header>
+            <main>
+                <form action="">
+                    <h3>Nome:</h3>
+                    <input type="text" id="new-name" placeholder="Digite o nome do aluno...">
+            
+                    <div class="restrictions">
+                        <div class="food">
+                            <h3>Restrições alimentares</h3>
+                            <input type="text" id="new-restrict" placeholder="Selecione uma restrição">
+                        </div>
+                        <section class="divider"></section>
+                        <div class="physic">
+                            <h3>Restrições físicas</h3>
+                            <input type="text" id="new-restrict" placeholder="Selecione uma restrição">  
+                        </div>
+                    </div>
+                    
+                    <div class="buttons">
+                        <div class="button cancel" onclick="slideUp('.new-student-wrapper');">
+                            Cancelar
+                            <img src="images/icon-x.svg" alt="">
+                        </div>
+                        <button class="button concluded" onclick="alert('Cadastro realizado com sucesso!'); slideUp('.new-student-wrapper');">
+                            Cadastrar
+                            <img src="images/icon-check.svg" alt="">
+                        </button>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </section>
+
+    <!-- VIEW STUDENT -->
+    <section class="view-student-wrapper">
+        <div class="slide">
+            <header>
+                <h2>Arthur Silva</h2>
+                <a href="#"><img src="images/icon-edit.svg" alt=""></a>
+            </header>
+            <main>        
+                <div class="restrictions">
+                    <div class="food">
+                        <h3>Restrições alimentares</h3>
+                        <ul>
+                            <li>• Lactose</li>
+                            <li>• Açúcar</li>
+                        </ul>
+                    </div>
+                    <section class="divider"></section>
+                    <div class="physic">
+                        <h3>Restrições físicas</h3>
+                        <ul>
+                            <li>• Somente líquidos</li>
+                            <li>• Colher adaptada</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="button cancel" onclick="slideUp('.view-student-wrapper');">
+                        Sair
+                        <img src="images/icon-x.svg" alt="">
+                    </div>
+                </div>
+            </main>
+        </div>
+    </section>
+
+
+</body>
+</html>

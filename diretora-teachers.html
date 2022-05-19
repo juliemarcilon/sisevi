@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisevi - Professores</title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/diretora-teachers.css">
+</head>
+<body>
+    <header id="header">
+        <h3><a href="diretora-home.html">Escola Vivian Marçal</a></h3>
+    </header>
+    <main id="main">
+        <section class="teachers-wrapper">
+            <header>
+                <div class="content">
+                    <p class="title">Professor</p>
+                    <div class="buttons">
+                        <a href=""><img src="images/icon-search.svg" alt=""></a>
+                        <a href=""><img src="images/icon-plus.svg" alt=""></a>
+                    </div>
+                </div>
+            </header>
+            <ul class="teachers-list">
+                <li><p>Professor A</p></li>
+                <li><p>Professor B</p></li>
+                <li><p>Professor C</p></li>
+                <li><p>Professor D</p></li>
+                <li><p>Professor E</p></li>
+            </ul>
+            <footer>
+                <p>Clique no professor para ver mais informações</p>
+            </footer>
+        </section>
+        <footer id="footer">
+            <section class="buttons">
+                <a href="diretora-records.html" class="back-button">
+                    <img src="images/icon-back.svg" alt="">
+                    Voltar
+                </a>
+            </section>
+        </footer>
+    </main>
+
+    <!-- NEW TEACHER -->
+    <section class="new-teacher-wrapper">
+        <div class="slide">
+            <header>
+                <h2>Nova turma</h2>
+            </header>
+            <main>
+                <form action="">
+                    <h3>Nome do professor:</h3>
+                    <input type="text" id="new-teacher" placeholder="Digite o nome do professor...">
+            
+                    <h3>Em quais turmas dará aula?</h3>
+                    <input type="text" id="" placeholder="Digite o nome da turma...">
+                    
+                    <ul class="classes-list">
+                        <li>6º ano - manhã</li>
+                    </ul>
+
+                    <div class="buttons">
+                        <div class="button cancel">
+                            Cancelar
+                            <img src="images/icon-x.svg" alt="">
+                        </div>
+                        <button class="button concluded">
+                            Cadastrar
+                            <img src="images/icon-check.svg" alt="">
+                        </button>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </section>
+
+    <!-- VIEW TEACHER -->
+    <section class="view-teacher-wrapper">
+        <div class="slide">
+            <header>
+                <h2>Professor A</h2>
+                <a href=""><img src="images/icon-edit.svg" alt=""></a>
+            </header>
+            <main>        
+                <div class="class-students">
+                    <h3>Turmas:</h3>
+                    <ul class="students-list">
+                        <li>6º ano - Manhã</li>
+                        <li>6º ano - Tarde</li>
+                    </ul>
+                </div>
+                <div class="button cancel">
+                    Sair
+                    <img src="images/icon-x.svg" alt="">
+                </div>
+            </main>
+        </div>
+    </section>
+
+
+</body>
+</html>

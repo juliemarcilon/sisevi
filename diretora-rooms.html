@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisevi - Salas</title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/diretora-rooms.css"></head>
+<body>
+    <header id="header">
+        <h2><a href="diretora-home.html">Escola Vivian Marçal</a></h2>
+    </header>
+    <main id="main">
+        <section class="rooms-wrapper">
+            <header>
+                <div class="content">
+                    <p class="title">Salas</p>
+                    <div class="buttons">
+                        <a href=""><img src="images/icon-search.svg" alt=""></a>
+                        <a href=""><img src="images/icon-plus.svg" alt=""></a>
+                    </div>
+                    
+                </div>
+            </header>
+            <ul class="rooms-list">
+                <li><p>Sala 101</p></li>
+                <li><p>Sala 102</p></li>
+                <li><p>Sala 103</p></li>
+                <li><p>Sala 201</p></li>
+                <li><p>Sala 202</p></li>
+            </ul>
+            <footer>
+                <p>Clique na sala para ver mais informações</p>
+            </footer>
+        </section>
+        <footer id="footer">
+            <section class="buttons">
+                <a href="diretora-records.html" class="back-button">
+                    <img src="images/icon-back.svg" alt="">
+                    Voltar
+                </a>
+            </section>
+        </footer>
+    </main>
+
+    <!-- NEW ROOM -->
+    <section class="new-room-wrapper">
+        <div class="slide">
+            <header>
+                <h2>Nova sala</h2>
+            </header>
+            <main>
+                <form action="">
+                    <h3>Nome da sala:</h3>
+                    <input type="text" id="new-room" placeholder="Digite o nome da sala...">
+            
+                    <div class="classes-room">
+                        <div class="morning">
+                            <h3>Turma da manhã:</h3>
+                            <input type="text" id="" placeholder="Selecione uma turma">
+                        </div>
+                        <div class="afternoon">
+                            <h3>Turma da tarde:</h3>
+                            <input type="text" id="" placeholder="Selecione uma turma">  
+                        </div>
+                    </div>
+                    
+                    <div class="buttons">
+                        <div class="button cancel">
+                            Cancelar
+                            <img src="images/icon-x.svg" alt="">
+                        </div>
+                        <button class="button concluded">
+                            Cadastrar
+                            <img src="images/icon-check.svg" alt="">
+                        </button>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </section>
+
+    <!-- VIEW STUDENT -->
+    <section class="view-room-wrapper">
+        <div class="slide">
+            <header>
+                <h2>Sala 101</h2>
+                <img src="images/icon-edit.svg" alt="">
+            </header>
+            <main>        
+                <div class="classes-room">
+                    <div class="morning">
+                        <h3>Turma manhã</h3>
+                        <ul>
+                            <li>6º ano</li>
+                        </ul>
+                    </div>
+                    <div class="afternoon">
+                        <h3>Turma tarde</h3>
+                        <ul>
+                            <li>5º ano</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="button cancel">
+                    Sair
+                    <img src="images/icon-x.svg" alt="">
+                </div>
+            </main>
+        </div>
+    </section>
+
+
+</body>
+</html>

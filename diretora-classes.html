@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisevi - Turmas</title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/diretora-classes.css">
+</head>
+<body>
+    <header id="header">
+        <h3><a href="diretora-home.html">Escola Vivian Marçal</a></h3>
+    </header>
+    <main id="main">
+        <section class="classes-wrapper">
+            <header>
+                <div class="content">
+                    <h2 class="title">Turma</h2>
+                    <div class="buttons">
+                        <a href=""><img src="images/icon-search.svg" alt=""></a>
+                        <a href=""><img src="images/icon-plus.svg" alt=""></a>
+                    </div>
+                </div>
+            </header>
+            <ul class="classes-list">
+                <li><p>5º ano <span class="shift">Manhã</span></p></li>
+                <li><p>6º ano <span class="shift">Tarde</span></p></li>
+                <li><p>Primário 1 <span class="shift">Manhã</span></p></li>
+                <li><p>8º ano <span class="shift">Tarde</span></p></li>
+                <li><p>2º ano <span class="shift">Manhã</span></p></li>
+            </ul>
+            <footer>
+                <p>Clique na turma para ver mais informações</p>
+            </footer>
+        </section>
+        <footer id="footer">
+            <section class="buttons">
+                <a href="diretora-records.html" class="back-button">
+                    <img src="images/icon-back.svg" alt="">
+                    Voltar
+                </a>
+            </section>
+        </footer>
+    </main>
+
+    <!-- NEW CLASS -->
+    <section class="new-class-wrapper">
+        <div class="slide">
+            <header>
+                <h2>Nova turma</h2>
+                <form action="">
+                    <h3>Turno:</h3>
+                    <input type="text" id="class-shift" placeholder="Selecione um turno...">
+                </form>
+            </header>
+            <main>
+                <form action="">
+                    <h3>Nome da turma:</h3>
+                    <input type="text" id="new-class" placeholder="Digite o nome da turma...">
+            
+                    <h3>Adicionar alunos:</h3>
+                    <input type="text" id="" placeholder="Digite o nome do aluno...">
+                    
+                    <ul class="students-list">
+                        <li>Arthur Silva</li>
+                        <li>Breno Moreira</li>
+                        <li>Camila Pereira</li>
+                    </ul>
+
+                    <div class="buttons">
+                        <div class="button cancel">
+                            Cancelar
+                            <img src="images/icon-x.svg" alt="">
+                        </div>
+                        <button class="button concluded">
+                            Cadastrar
+                            <img src="images/icon-check.svg" alt="">
+                        </button>
+                    </div>
+                </form>
+            </main>
+        </div>
+    </section>
+
+    <!-- VIEW CLASS -->
+    <section class="view-class-wrapper">
+        <div class="slide">
+            <header>
+                <h2>6º ano - manhã</h2>
+                <img src="images/icon-edit.svg" alt="">
+            </header>
+            <main>        
+                <div class="class-students">
+                    <h3>Alunos:</h3>
+                    <ul class="students-list">
+                        <li>Arthur Silva</li>
+                        <li>Breno Moreira</li>
+                        <li>Camila Pereira</li>
+                    </ul>
+                </div>
+                <div class="button cancel">
+                    Sair
+                    <img src="images/icon-x.svg" alt="">
+                </div>
+            </main>
+        </div>
+    </section>
+
+
+</body>
+</html>
